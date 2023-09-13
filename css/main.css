@@ -188,9 +188,21 @@ img {
   color: #333;
 }
 
+.video-section {
+  max-width: 300px; /* or any other value that fits your design */
+  margin: 0 auto; /* centers the video section if it's smaller than the container */
+}
+
+.video-section video {
+  width: 100%; /* makes video responsive, it will occupy 100% width of the .video-section */
+  height: auto; /* maintains the aspect ratio of the video */
+}
 /* ... (the rest of your CSS stays the same) ... */
 
 @media only screen and (max-width: 768px) {
+  .video-section {
+    max-width: 100%;
+  }
 
   .grid-12.project {
     display: flex;
